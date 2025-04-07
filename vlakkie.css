@@ -1,0 +1,244 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #4a2c82;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-style: italic;
+}
+
+.character {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.character img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 2rem;
+    border: 5px solid #4a2c82;
+}
+
+#advice-generator {
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#generate-btn {
+    background-color: #4a2c82;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#generate-btn:hover {
+    background-color: #6a3cb2;
+}
+
+.advice-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 2rem 0 0.5rem;
+}
+
+.snarky-comment {
+    font-style: italic;
+    color: #666;
+}
+
+#advice-archive,
+#zyn-advice-archive,
+#ciggie-advice-archive {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
+}
+
+#advice-list,
+#zyn-advice-list,
+#ciggie-advice-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#advice-list li,
+#zyn-advice-list li {
+    background: white;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-left: 4px solid #2c824a;
+}
+
+#zyn-advice-generator {
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#zyn-generate-btn {
+    background-color: #2c824a;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#zyn-generate-btn:hover {
+    background-color: #3cb26a;
+}
+
+.zen-img {
+    border-color: #2c824a !important;
+}
+
+.ciggie-img {
+    border-color: #ff69b4 !important;
+}
+
+#ciggie-advice-generator {
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#ciggie-generate-btn {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#ciggie-generate-btn:hover {
+    background-color: #ff1493;
+}
+
+#ciggie-advice-list li {
+    background: white;
+    margin: 0 auto 3rem;
+    padding: 1rem;
+    border-left: 4px solid #ff69b4;
+    max-width: 800px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ddd;
+    font-size: 0.9rem;
+}
+
+/* Mobile-first responsive design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .character {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 1rem;
+    }
+    
+    .character img {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 1rem;
+    }
+
+    .bio {
+        padding: 0 0.5rem;
+    }
+
+    #advice-generator {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    #generate-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .advice-text {
+        font-size: 1.2rem;
+        margin: 1rem 0 0.5rem;
+    }
+
+    #advice-archive {
+        padding: 0 0.5rem;
+    }
+
+    #advice-list li {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 900px) {
+    .character {
+        max-width: 90%;
+    }
+
+    .character img {
+        width: 250px;
+        height: 250px;
+    }
+
+    #advice-generator {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 901px) {
+    .character {
+        max-width: 1000px;
+    }
+}
